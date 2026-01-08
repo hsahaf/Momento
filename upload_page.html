@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Momento Upload</title>
+</head>
+<body>
+	<h1>Upload Your Photos & Videos</h1>
+	<input type="file" id="mediaInput" multiple accept="image/*,video/*">
+	<input type="text” id="tagInput" placeholder="Add a tag (e.g., beach, 2015)">
+	<button onclick=“uploadMedia()”>Upload</button>
+	<p id="status"></p>
+
+	<script> function uploadMedia() {
+		 const file = document.getElementById('mediaInput').files[0];
+		 const tag = document.getElementById('tagInput').value;
+		 if (file && tag) { 
+			document.getElementById('status').innerText = 
+				'File: ' + file.name + ', Tag: ' + tag + ' (Next week: connect to S3)'; } else { 
+					document.getElementById('status').innerText = 'Please select a file and add tag'; }
+					 }
+	 </script>
+	
+     
+    </form>
+</body>
+</html>
