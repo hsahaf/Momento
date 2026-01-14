@@ -17,8 +17,11 @@ Security is embedded throughout every architectural decision. IAM policies enfor
 
 #### Technology Stack
 Cloud Platform: AWS (S3, DynamoDB, IAM, CloudTrail, GuardDuty)
+
 Backend: Node.js with AWS SDK
+
 Frontend: HTML, JavaScript, CSS
+
 Security: Server-side validation, encrypted storage, IAM policies, audit logging
 
 ### Key Learning Outcomes
